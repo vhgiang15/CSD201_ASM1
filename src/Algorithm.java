@@ -192,9 +192,9 @@ public class Algorithm {
      */
     public int binarySearch(double[] a, double val) {
         int result=-1;
-        int low=1;
-        int hight=a.length;
-        while(true){
+        int low=0;
+        int hight=a.length-1;
+        while(hight>=1){
             if(low>hight) {
                 result=-1;
                 break;
